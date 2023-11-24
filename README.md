@@ -1,16 +1,53 @@
 # teste2
 
-A new Flutter project.
+Um aplicativo simples para visualizar e baixar livros em formato EPUB.
 
-## Getting Started
+## Descrição
 
-This project is a starting point for a Flutter application.
+Este aplicativo foi desenvolvido em Flutter e tem como objetivo mostrar uma estante de livros, permitindo visualizar as capas dos livros e baixá-los para leitura offline. Os livros são carregados a partir de um endpoint fornecido por `https://escribo.com/books.json`.
 
-A few resources to get you started if this is your first Flutter project:
+## Funcionalidades
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Visualização da estante de livros
+- Download de livros em formato EPUB
+- Adicionar e remover livros aos favoritos
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologias Utilizadas
+
+- Flutter
+- Dart
+- HTTP (pacote `http`)
+- Path Provider (pacote `path_provider`)
+- Dio (pacote `dio`)
+
+## Estrutura do Projeto
+
+O projeto consiste em:
+
+- `main.dart`: Arquivo principal com a configuração do aplicativo e a definição das telas.
+- `BookshelfPage`: Página principal que exibe a estante de livros.
+- `Book`: Classe modelo para representar um livro.
+- `FavoritesPage`: Página para exibir os livros marcados como favoritos.
+- Integração com `vocsy_epub_viewer` para visualizar os livros em formato EPUB.
+
+## Como Executar
+
+Para executar este projeto localmente:
+
+1. Clone este repositório.
+2. Abra o projeto no seu editor de código.
+3. Execute o aplicativo em um emulador ou dispositivo físico utilizando o comando `flutter run`.
+
+Certifique-se de ter o ambiente do Flutter configurado corretamente para executar o projeto.
+
+## Screenshots
+
+_Adicione aqui imagens ou gifs do aplicativo em execução, se desejar._
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você quiser melhorar este projeto, fique à vontade para abrir uma issue ou pull request.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
